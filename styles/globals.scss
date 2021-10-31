@@ -1,8 +1,10 @@
+@import "mixins.scss";
+
 @font-face {
   font-family: "Inter-Regular";
   src: url("/fonts/Inter-Regular.ttf");
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-display: swap;
 }
 @font-face {
@@ -17,8 +19,30 @@
   font-family: "Inter-Bold";
   src: url("/fonts/Inter-Bold.ttf");
   font-style: medium;
-  font-weight: 500;
+  font-weight: 700;
   font-display: swap;
+}
+
+body::-webkit-scrollbar {
+  background-color: black;
+  width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #111;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display:none;
 }
 
 
@@ -27,7 +51,6 @@ body {
   background-color: black;
   color: white;
 }
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

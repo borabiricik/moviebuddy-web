@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from "next/link"
-import styles from "../../../styles/Components/Header/Nav.module.scss"
+import {nav} from "../../../styles/Components/Header/Nav.module.scss"
 
 const Nav = () => {
     return (
-        <nav className={"md:pl-12"}>
+        <nav className={`md:pl-12 ${nav} font-semibold hidden lg:flex`}>
             <Link href="/" scroll={false} >
                 <a href="#" className={"md:mr-10"}>Home</a>
             </Link>
