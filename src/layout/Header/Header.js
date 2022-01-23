@@ -16,8 +16,8 @@ const Header = () => {
                 <Link href="/">
                     <h1 className={`${brand} cursor-pointer font-bold text-center w-full `}>MovieBuddy</h1>
                 </Link>
-
-                <Nav />
+{/* 
+                <Nav /> */}
 
             </div>
 
